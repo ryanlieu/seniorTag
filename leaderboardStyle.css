@@ -1,0 +1,97 @@
+body{
+	margin:0px;
+	padding:0px;
+	font-family:'Lato' Helvetica;
+	background-color: #EAEFF1;
+	color:#FFFFFF;
+	z-index:0;
+}
+#cover{
+	position:absolute;
+	z-index:-1;
+	border-radius: .75vw;
+	height:41vw;
+	width:92.5vw;
+	background-color:#EAEFF1;
+	margin-top:3.7vw;
+	margin-left:3.7vw;
+	text-align:center;
+}
+
+#deadNotification{
+	margin-top:17.2vw;
+	font-size:5vw;
+	letter-spacing: .5vw;
+	color:#EAEFF1;;
+}
+
+#navBar{
+	background-color:#e74c3c;
+	height:7vw;
+}
+
+#navBar h1{
+	font-size:3.5vw;
+	padding-left:1vw;
+	padding-top:2.7vw;
+	margin-bottom:-5.3vw;
+	color:#FFFFFF;
+	font-weight:900;
+	letter-spacing:.7vw;
+}
+
+#currentPage{
+	color:#646464;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left:68vw;
+}
+
+li a {
+	font-weight:700;
+	text-decoration: none;
+	padding-top:3.2vw;
+    display: inline;
+    float:left;
+    margin-left:1.6vw;
+    font-size:1.5vw;
+}
+
+li a:link{
+	color:#FFFFFF;
+}
+
+li a:visited{
+	color:#FFFFFF;
+}
+
+li a:hover{
+	color:#646464;
+	transition: color .2s ease-in;
+}
+
+h1{
+	font-size: 2.5vw;
+	color:#646464;
+}
+
+#pageContainer{
+	text-align:center;
+	padding:1vw;
+	background-color:#FFFFFF;
+	width:40vw;
+	margin:auto;
+	border-radius: .75vw;
+	margin-top:4vw;
+	height:39vw;
+
+}
+
+.scoreList{
+	font-size:1.5vw;
+	font-weight:400;
+}
