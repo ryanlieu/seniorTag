@@ -138,8 +138,9 @@ session_start();
 	    	}
 
 	    	//Verifies email and password
-	    	$query = "SELECT * FROM SeniorNames WHERE email = '$emailLogin'";
-            $rows = querySQL($query, $db);
+	    	$statement = $db->prepare("SELECT * FROM SeniorNames WHERE email = ?");
+	    	$statement->execute(array($emailLogin));
+            $rows = $statement->fetchAll(PDO::FETCH_NUM);
             //If login is correct
             if(password_verify($passwordLogin, $rows[0][2])){
             	session_start();
